@@ -12,13 +12,58 @@
       };
 
       $(document).ready(function() {
-        $('#myContent').html('hello world');
+        // $('#myContent').html('hello world');
+        // var para = $('h1');
+        // alert(para.length)
+        // $('h1').css('color', 'red')
+        // $('div').each(function(){   // loop through each div in the DOM
+        //     alert($(this).html())
+        // })
+        // var colls = $('h1 , div')
+        // alert(colls.length)
+        // alert($('#marino').html())
+        // alert($('div[title]').length)
+        // alert($("div[title='divTitle']"));
+        // var inputs = $(':input');
+        // alert(typeof inputs[1]); // jquery object
+        // alert($(inputs[1]).val()); // 
+        // $('#form1 :input').each(function(){ // go find form1 and dispaly all its inputs
+        //   var elem = $(this); // This is wrapped in a jquery wrapper
+        //   // alert(elem.val());
+        //   alert(elem.val('foo')); // add element foo to all form inputs
+        // })
+
+        alert($('div:contains("live in")').html());
+
+
       });
     </script>
   </head>
   <body>
     <div id="myContent">
       <h1>My jquery enabled page</h1>
+      <h1>Name</h1>
     </div>
+
+    <div id="marino" title="divTitle">My name is Ernest</div>
+    <div title="elem">I live in Uganda</div>
+    <div>I am 25 years old</div>
+    <span>Its nature</span>
+    <span>He is here</span>
+
+    <form action="" method="post" id="form1">
+        <p><input type="text" id="email-address" placeholder="Email Address" value="Enter Email......"></p>
+        <p><textarea name="" id="textarea-comments" cols="30" rows="10">
+          Comments.............
+        </textarea></p>
+        <p><input type="password" id="user-password" placeholder="Password"></p>
+        <p><input type="password" id="user-passowrd-confirmation" placeholder="Password Confirmation"></p>
+        <select name="" id="sel">
+          <option value="AZ">AZ</option>
+          <option value="BC" selected="true">BC</option>
+        </select>
+        <input type="button" value="Submit">
+    </form>
   </body>
 </html>
+
