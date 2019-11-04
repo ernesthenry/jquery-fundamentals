@@ -1,2 +1,2 @@
 # jquery-fundamentals
-Basics of Jquert
+Basics of Jquery
